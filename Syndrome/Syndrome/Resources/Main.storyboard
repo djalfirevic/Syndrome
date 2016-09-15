@@ -37,7 +37,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faf-CB-qPL">
                                 <state key="normal" title="About Todd Syndrome"/>
                                 <connections>
-                                    <segue destination="Zap-p8-v1W" kind="presentation" identifier="WebSegue" id="DSz-nl-ajH"/>
+                                    <segue destination="Zap-p8-v1W" kind="presentation" identifier="WebSegue" modalTransitionStyle="flipHorizontal" id="DSz-nl-ajH"/>
                                 </connections>
                             </button>
                         </subviews>
