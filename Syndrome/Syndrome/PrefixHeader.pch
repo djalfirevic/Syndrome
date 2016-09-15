@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  Syndrome
+//
+//  Created by Djuro Alfirevic on 9/15/16.
+//  Copyright © 2016 Djuro Alfirevic. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "UIViewController+Utilities.h"
+
+#endif /* PrefixHeader_pch */

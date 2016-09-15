@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C44A1F481D8AB67F00D52CDE /* SyndromeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C44A1F471D8AB67F00D52CDE /* SyndromeTests.m */; };
+		C44A1F511D8ABC2600D52CDE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44A1F501D8ABC2600D52CDE /* WebViewController.m */; };
+		C44A1F541D8ABEE600D52CDE /* TransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C44A1F531D8ABEE600D52CDE /* TransitionManager.m */; };
+		C44A1F571D8ABF3600D52CDE /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44A1F561D8ABF3600D52CDE /* NavigationControllerDelegate.m */; };
+		C44A1F5A1D8AC74A00D52CDE /* UIViewController+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C44A1F591D8AC74A00D52CDE /* UIViewController+Utilities.m */; };
+		C4E696A31D8A8ADE00D34D8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E696A21D8A8ADE00D34D8F /* main.m */; };
+		C4E696AE1D8A8ADE00D34D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E696AD1D8A8ADE00D34D8F /* Assets.xcassets */; };
+		C4E696BC1D8A8B7100D34D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E696BB1D8A8B7100D34D8F /* Main.storyboard */; };
+		C4E696BE1D8A8B7D00D34D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E696BD1D8A8B7D00D34D8F /* LaunchScreen.storyboard */; };
+		C4E696C51D8A8BE100D34D8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E696C11D8A8BE100D34D8F /* AppDelegate.m */; };
+		C4E696F21D8A8F1100D34D8F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E696F11D8A8F1100D34D8F /* CoreData.framework */; };
+		C4E696F51D8A8F8B00D34D8F /* Syndrome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4E696F31D8A8F8B00D34D8F /* Syndrome.xcdatamodeld */; };
+		C4E696FB1D8A905000D34D8F /* Patient+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E696F81D8A905000D34D8F /* Patient+CoreDataClass.m */; };
+		C4E696FC1D8A905000D34D8F /* Patient+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E696FA1D8A905000D34D8F /* Patient+CoreDataProperties.m */; };
+		C4E696FF1D8A909500D34D8F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E696FE1D8A909500D34D8F /* DataManager.m */; };
+		C4E697021D8A933600D34D8F /* SyndromeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E697011D8A933600D34D8F /* SyndromeDetector.m */; };
+		C4E697051D8A945E00D34D8F /* ToddSyndromeDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E697041D8A945E00D34D8F /* ToddSyndromeDetector.m */; };
+		C4E697081D8A961F00D34D8F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E697071D8A961F00D34D8F /* HomeViewController.m */; };
+		C4E6970D1D8A98CE00D34D8F /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E6970B1D8A98CE00D34D8F /* MenuView.m */; };
+		C4E6970E1D8A98CE00D34D8F /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E6970C1D8A98CE00D34D8F /* MenuView.xib */; };
+		C4E697111D8A9E9D00D34D8F /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E697101D8A9E9D00D34D8F /* HistoryViewController.m */; };
+		C4E697151D8A9F5600D34D8F /* PatientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E697141D8A9F5600D34D8F /* PatientTableViewCell.m */; };
+		C4E697181D8AA0AF00D34D8F /* PatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E697171D8AA0AF00D34D8F /* PatientViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C44A1F4A1D8AB67F00D52CDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E696961D8A8ADE00D34D8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E6969D1D8A8ADE00D34D8F;
+			remoteInfo = Syndrome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C44A1F451D8AB67F00D52CDE /* SyndromeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyndromeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44A1F471D8AB67F00D52CDE /* SyndromeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyndromeTests.m; sourceTree = "<group>"; };
+		C44A1F491D8AB67F00D52CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C44A1F4F1D8ABC2600D52CDE /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		C44A1F501D8ABC2600D52CDE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		C44A1F521D8ABEE600D52CDE /* TransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionManager.h; sourceTree = "<group>"; };
+		C44A1F531D8ABEE600D52CDE /* TransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionManager.m; sourceTree = "<group>"; };
+		C44A1F551D8ABF3600D52CDE /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		C44A1F561D8ABF3600D52CDE /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		C44A1F581D8AC74A00D52CDE /* UIViewController+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utilities.h"; sourceTree = "<group>"; };
+		C44A1F591D8AC74A00D52CDE /* UIViewController+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utilities.m"; sourceTree = "<group>"; };
+		C4E6969E1D8A8ADE00D34D8F /* Syndrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Syndrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E696A21D8A8ADE00D34D8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4E696AD1D8A8ADE00D34D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4E696B21D8A8ADE00D34D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E696BB1D8A8B7100D34D8F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4E696BD1D8A8B7D00D34D8F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4E696C01D8A8BE100D34D8F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4E696C11D8A8BE100D34D8F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4E696C61D8A8BFA00D34D8F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C4E696F11D8A8F1100D34D8F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C4E696F41D8A8F8B00D34D8F /* Syndrome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Syndrome.xcdatamodel; sourceTree = "<group>"; };
+		C4E696F61D8A8FDB00D34D8F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C4E696F71D8A905000D34D8F /* Patient+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Patient+CoreDataClass.h"; sourceTree = "<group>"; };
+		C4E696F81D8A905000D34D8F /* Patient+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Patient+CoreDataClass.m"; sourceTree = "<group>"; };
+		C4E696F91D8A905000D34D8F /* Patient+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Patient+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C4E696FA1D8A905000D34D8F /* Patient+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Patient+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C4E696FD1D8A909500D34D8F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		C4E696FE1D8A909500D34D8F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		C4E697001D8A933600D34D8F /* SyndromeDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyndromeDetector.h; sourceTree = "<group>"; };
+		C4E697011D8A933600D34D8F /* SyndromeDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyndromeDetector.m; sourceTree = "<group>"; };
+		C4E697031D8A945E00D34D8F /* ToddSyndromeDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToddSyndromeDetector.h; sourceTree = "<group>"; };
+		C4E697041D8A945E00D34D8F /* ToddSyndromeDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToddSyndromeDetector.m; sourceTree = "<group>"; };
+		C4E697061D8A961F00D34D8F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C4E697071D8A961F00D34D8F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C4E6970A1D8A98CE00D34D8F /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		C4E6970B1D8A98CE00D34D8F /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		C4E6970C1D8A98CE00D34D8F /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		C4E6970F1D8A9E9D00D34D8F /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		C4E697101D8A9E9D00D34D8F /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		C4E697131D8A9F5600D34D8F /* PatientTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientTableViewCell.h; sourceTree = "<group>"; };
+		C4E697141D8A9F5600D34D8F /* PatientTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientTableViewCell.m; sourceTree = "<group>"; };
+		C4E697161D8AA0AF00D34D8F /* PatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientViewController.h; sourceTree = "<group>"; };
+		C4E697171D8AA0AF00D34D8F /* PatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C44A1F421D8AB67F00D52CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E6969B1D8A8ADE00D34D8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E696F21D8A8F1100D34D8F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C44A1F461D8AB67F00D52CDE /* SyndromeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C44A1F471D8AB67F00D52CDE /* SyndromeTests.m */,
+				C44A1F491D8AB67F00D52CDE /* Info.plist */,
+			);
+			path = SyndromeTests;
+			sourceTree = "<group>";
+		};
+		C4E696951D8A8ADE00D34D8F = {
+			isa = PBXGroup;
+			children = (
+				C4E696A01D8A8ADE00D34D8F /* Syndrome */,
+				C44A1F461D8AB67F00D52CDE /* SyndromeTests */,
+				C4E696F01D8A8F0700D34D8F /* Frameworks */,
+				C4E6969F1D8A8ADE00D34D8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4E6969F1D8A8ADE00D34D8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4E6969E1D8A8ADE00D34D8F /* Syndrome.app */,
+				C44A1F451D8AB67F00D52CDE /* SyndromeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4E696A01D8A8ADE00D34D8F /* Syndrome */ = {
+			isa = PBXGroup;
+			children = (
+				C4E696B91D8A8B6300D34D8F /* Resources */,
+				C4E696BA1D8A8B6300D34D8F /* Source */,
+				C4E696A11D8A8ADE00D34D8F /* Supporting Files */,
+			);
+			path = Syndrome;
+			sourceTree = "<group>";
+		};
+		C4E696A11D8A8ADE00D34D8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4E696AD1D8A8ADE00D34D8F /* Assets.xcassets */,
+				C4E696B21D8A8ADE00D34D8F /* Info.plist */,
+				C4E696A21D8A8ADE00D34D8F /* main.m */,
+				C4E696C61D8A8BFA00D34D8F /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4E696B91D8A8B6300D34D8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4E696BB1D8A8B7100D34D8F /* Main.storyboard */,
+				C4E696BD1D8A8B7D00D34D8F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4E696BA1D8A8B6300D34D8F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C4E696BF1D8A8BE100D34D8F /* Application Delegate */,
+				C4E696C31D8A8BE100D34D8F /* Utilities */,
+				C4E696C21D8A8BE100D34D8F /* Models */,
+				C4E697091D8A98CE00D34D8F /* Views */,
+				C4E697121D8A9F4800D34D8F /* Cells */,
+				C4E696C41D8A8BE100D34D8F /* View Controllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C4E696BF1D8A8BE100D34D8F /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C4E696C01D8A8BE100D34D8F /* AppDelegate.h */,
+				C4E696C11D8A8BE100D34D8F /* AppDelegate.m */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		C4E696C21D8A8BE100D34D8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4E696F31D8A8F8B00D34D8F /* Syndrome.xcdatamodeld */,
+				C4E696F71D8A905000D34D8F /* Patient+CoreDataClass.h */,
+				C4E696F81D8A905000D34D8F /* Patient+CoreDataClass.m */,
+				C4E696F91D8A905000D34D8F /* Patient+CoreDataProperties.h */,
+				C4E696FA1D8A905000D34D8F /* Patient+CoreDataProperties.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4E696C31D8A8BE100D34D8F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C4E696F61D8A8FDB00D34D8F /* Constants.h */,
+				C4E696FD1D8A909500D34D8F /* DataManager.h */,
+				C4E696FE1D8A909500D34D8F /* DataManager.m */,
+				C4E697001D8A933600D34D8F /* SyndromeDetector.h */,
+				C4E697011D8A933600D34D8F /* SyndromeDetector.m */,
+				C4E697031D8A945E00D34D8F /* ToddSyndromeDetector.h */,
+				C4E697041D8A945E00D34D8F /* ToddSyndromeDetector.m */,
+				C44A1F521D8ABEE600D52CDE /* TransitionManager.h */,
+				C44A1F531D8ABEE600D52CDE /* TransitionManager.m */,
+				C44A1F551D8ABF3600D52CDE /* NavigationControllerDelegate.h */,
+				C44A1F561D8ABF3600D52CDE /* NavigationControllerDelegate.m */,
+				C44A1F581D8AC74A00D52CDE /* UIViewController+Utilities.h */,
+				C44A1F591D8AC74A00D52CDE /* UIViewController+Utilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C4E696C41D8A8BE100D34D8F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4E697061D8A961F00D34D8F /* HomeViewController.h */,
+				C4E697071D8A961F00D34D8F /* HomeViewController.m */,
+				C4E697161D8AA0AF00D34D8F /* PatientViewController.h */,
+				C4E697171D8AA0AF00D34D8F /* PatientViewController.m */,
+				C4E6970F1D8A9E9D00D34D8F /* HistoryViewController.h */,
+				C4E697101D8A9E9D00D34D8F /* HistoryViewController.m */,
+				C44A1F4F1D8ABC2600D52CDE /* WebViewController.h */,
+				C44A1F501D8ABC2600D52CDE /* WebViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C4E696F01D8A8F0700D34D8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4E696F11D8A8F1100D34D8F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4E697091D8A98CE00D34D8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4E6970A1D8A98CE00D34D8F /* MenuView.h */,
+				C4E6970B1D8A98CE00D34D8F /* MenuView.m */,
+				C4E6970C1D8A98CE00D34D8F /* MenuView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4E697121D8A9F4800D34D8F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C4E697131D8A9F5600D34D8F /* PatientTableViewCell.h */,
+				C4E697141D8A9F5600D34D8F /* PatientTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C44A1F441D8AB67F00D52CDE /* SyndromeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C44A1F4E1D8AB67F00D52CDE /* Build configuration list for PBXNativeTarget "SyndromeTests" */;
+			buildPhases = (
+				C44A1F411D8AB67F00D52CDE /* Sources */,
+				C44A1F421D8AB67F00D52CDE /* Frameworks */,
+				C44A1F431D8AB67F00D52CDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C44A1F4B1D8AB67F00D52CDE /* PBXTargetDependency */,
+			);
+			name = SyndromeTests;
+			productName = SyndromeTests;
+			productReference = C44A1F451D8AB67F00D52CDE /* SyndromeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4E6969D1D8A8ADE00D34D8F /* Syndrome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E696B51D8A8ADE00D34D8F /* Build configuration list for PBXNativeTarget "Syndrome" */;
+			buildPhases = (
+				C4E6969A1D8A8ADE00D34D8F /* Sources */,
+				C4E6969B1D8A8ADE00D34D8F /* Frameworks */,
+				C4E6969C1D8A8ADE00D34D8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Syndrome;
+			productName = Syndrome;
+			productReference = C4E6969E1D8A8ADE00D34D8F /* Syndrome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4E696961D8A8ADE00D34D8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Djuro Alfirevic";
+				TargetAttributes = {
+					C44A1F441D8AB67F00D52CDE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C4E6969D1D8A8ADE00D34D8F;
+					};
+					C4E6969D1D8A8ADE00D34D8F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C4E696991D8A8ADE00D34D8F /* Build configuration list for PBXProject "Syndrome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C4E696951D8A8ADE00D34D8F;
+			productRefGroup = C4E6969F1D8A8ADE00D34D8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4E6969D1D8A8ADE00D34D8F /* Syndrome */,
+				C44A1F441D8AB67F00D52CDE /* SyndromeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C44A1F431D8AB67F00D52CDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E6969C1D8A8ADE00D34D8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E696BE1D8A8B7D00D34D8F /* LaunchScreen.storyboard in Resources */,
+				C4E6970E1D8A98CE00D34D8F /* MenuView.xib in Resources */,
+				C4E696AE1D8A8ADE00D34D8F /* Assets.xcassets in Resources */,
+				C4E696BC1D8A8B7100D34D8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C44A1F411D8AB67F00D52CDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44A1F481D8AB67F00D52CDE /* SyndromeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E6969A1D8A8ADE00D34D8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E696C51D8A8BE100D34D8F /* AppDelegate.m in Sources */,
+				C44A1F511D8ABC2600D52CDE /* WebViewController.m in Sources */,
+				C4E696FF1D8A909500D34D8F /* DataManager.m in Sources */,
+				C4E696F51D8A8F8B00D34D8F /* Syndrome.xcdatamodeld in Sources */,
+				C44A1F5A1D8AC74A00D52CDE /* UIViewController+Utilities.m in Sources */,
+				C44A1F541D8ABEE600D52CDE /* TransitionManager.m in Sources */,
+				C4E696A31D8A8ADE00D34D8F /* main.m in Sources */,
+				C4E697111D8A9E9D00D34D8F /* HistoryViewController.m in Sources */,
+				C4E696FB1D8A905000D34D8F /* Patient+CoreDataClass.m in Sources */,
+				C44A1F571D8ABF3600D52CDE /* NavigationControllerDelegate.m in Sources */,
+				C4E697081D8A961F00D34D8F /* HomeViewController.m in Sources */,
+				C4E697021D8A933600D34D8F /* SyndromeDetector.m in Sources */,
+				C4E696FC1D8A905000D34D8F /* Patient+CoreDataProperties.m in Sources */,
+				C4E697151D8A9F5600D34D8F /* PatientTableViewCell.m in Sources */,
+				C4E697181D8AA0AF00D34D8F /* PatientViewController.m in Sources */,
+				C4E697051D8A945E00D34D8F /* ToddSyndromeDetector.m in Sources */,
+				C4E6970D1D8A98CE00D34D8F /* MenuView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C44A1F4B1D8AB67F00D52CDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4E6969D1D8A8ADE00D34D8F /* Syndrome */;
+			targetProxy = C44A1F4A1D8AB67F00D52CDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C44A1F4C1D8AB67F00D52CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SyndromeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rs.cubes.SyndromeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Syndrome.app/Syndrome";
+			};
+			name = Debug;
+		};
+		C44A1F4D1D8AB67F00D52CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SyndromeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rs.cubes.SyndromeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Syndrome.app/Syndrome";
+			};
+			name = Release;
+		};
+		C4E696B31D8A8ADE00D34D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4E696B41D8A8ADE00D34D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4E696B61D8A8ADE00D34D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = $PROJECT_NAME/PrefixHeader.pch;
+				INFOPLIST_FILE = Syndrome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rs.cubes.Syndrome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4E696B71D8A8ADE00D34D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = $PROJECT_NAME/PrefixHeader.pch;
+				INFOPLIST_FILE = Syndrome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rs.cubes.Syndrome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C44A1F4E1D8AB67F00D52CDE /* Build configuration list for PBXNativeTarget "SyndromeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44A1F4C1D8AB67F00D52CDE /* Debug */,
+				C44A1F4D1D8AB67F00D52CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4E696991D8A8ADE00D34D8F /* Build configuration list for PBXProject "Syndrome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E696B31D8A8ADE00D34D8F /* Debug */,
+				C4E696B41D8A8ADE00D34D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E696B51D8A8ADE00D34D8F /* Build configuration list for PBXNativeTarget "Syndrome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E696B61D8A8ADE00D34D8F /* Debug */,
+				C4E696B71D8A8ADE00D34D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4E696F31D8A8F8B00D34D8F /* Syndrome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4E696F41D8A8F8B00D34D8F /* Syndrome.xcdatamodel */,
+			);
+			currentVersion = C4E696F41D8A8F8B00D34D8F /* Syndrome.xcdatamodel */;
+			path = Syndrome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4E696961D8A8ADE00D34D8F /* Project object */;
+}
