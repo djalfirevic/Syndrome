@@ -14,8 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
 @property (weak, nonatomic) IBOutlet UIButton *button1;
 @property (weak, nonatomic) IBOutlet UIButton *button2;
-@property (weak, nonatomic) IBOutlet UILabel *label1;
-@property (weak, nonatomic) IBOutlet UILabel *label2;
 @property (nonatomic) BOOL menuOpened;
 @end
 
@@ -67,9 +65,6 @@
 }
 
 - (void)prepareMenu {
-    self.label1.alpha = 0.0f;
-    self.label2.alpha = 0.0f;
-    
     [self configureButton:self.button1];
     [self configureButton:self.button2];
 }
@@ -80,14 +75,12 @@
     [UIView animateWithDuration:kAnimationDuration animations:^{
         self.button2.center = self.menuButton.center;
         self.button2.alpha = 0.0f;
-        self.label2.alpha = 0.0f;
     }];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:kAnimationDuration animations:^{
             self.button1.center = self.menuButton.center;
             self.button1.alpha = 0.0f;
-            self.label1.alpha = 0.0f;
         }];
     });
 }
@@ -98,14 +91,12 @@
     [UIView animateWithDuration:kAnimationDuration animations:^{
         self.button1.frame = CGRectMake(self.button1.frame.origin.x, 22, self.button1.frame.size.width, self.button1.frame.size.height);
         self.button1.alpha = 1.0f;
-        self.label1.alpha = 1.0f;
     }];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:kAnimationDuration animations:^{
             self.button2.frame = CGRectMake(self.button2.frame.origin.x, 60, self.button2.frame.size.width, self.button2.frame.size.height);
             self.button2.alpha = 1.0f;
-            self.label2.alpha = 1.0f;
         }];
     });
 }

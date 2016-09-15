@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="fge-wZ-rUp"/>
-                                    <constraint firstAttribute="height" constant="135" id="osu-8x-CKT"/>
+                                    <constraint firstAttribute="height" constant="150" id="osu-8x-CKT"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="EwU-TB-GMg" id="sZh-nP-LGO"/>
