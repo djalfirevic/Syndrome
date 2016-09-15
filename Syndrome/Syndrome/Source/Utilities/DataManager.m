@@ -72,11 +72,6 @@
     return resultsArray;
 }
 
-- (void)deleteObjectInDatabase:(NSManagedObject *)object {
-    [self.managedObjectContext deleteObject:object];
-    [self saveToDatabase];
-}
-
 - (void)updatePatient:(Patient *)patient {
     ToddSyndromeDetector *detector = [[ToddSyndromeDetector alloc] initWithPatient:patient];
     patient.probability = [detector probability];
@@ -106,14 +101,14 @@
     ToddSyndromeDetector *detector = [[ToddSyndromeDetector alloc] initWithPatient:patient];
     patient.probability = [detector probability];
     
-    [self saveToDatabase];
+    [self save];
     
     return patient;
 }
 
 #pragma mark - Private API
 
-- (void)saveToDatabase {
+- (void)save {
     NSError *error = nil;
     if ([self.managedObjectContext hasChanges] && ![self.managedObjectContext save:&error]) {
         NSLog(@"Error saving to database: %@, %@", [error localizedDescription], [error userInfo]);

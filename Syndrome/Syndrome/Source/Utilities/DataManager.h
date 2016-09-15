@@ -14,7 +14,7 @@
 + (instancetype)sharedInstance;
 
 /**
- Fetching data from the database.
+ Fetching data from the data source.
 
  @param entityName    Entity name from database
  @param filter        WHERE clause basically
@@ -28,15 +28,6 @@
                     withSortAsc:(BOOL)sortAscending
                          forKey:(NSString *)sortKey;
 
-
-/**
- Delete object from database.
-
- @param object NSManagedObject subclass
- */
-- (void)deleteObjectInDatabase:(NSManagedObject *)object;
-
-
 /**
  Update patient in database.
 
@@ -46,7 +37,7 @@
 
 
 /**
- Save patient in database
+ Save patient to be persistent.
 
  @param name      First name
  @param surname   Last name
