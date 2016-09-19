@@ -76,11 +76,7 @@
     ToddSyndromeDetector *detector = [[ToddSyndromeDetector alloc] initWithPatient:patient];
     patient.probability = [detector probability];
     
-    NSError *error = nil;
-    if ([patient.managedObjectContext hasChanges] && ![patient.managedObjectContext save:&error]) {
-        NSLog(@"Error updating object in database: %@, %@", [error localizedDescription], [error userInfo]);
-        abort();
-    }
+    [self save];
 }
 
 - (Patient *)savePatientWithName:(NSString *)name
