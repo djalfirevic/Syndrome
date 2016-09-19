@@ -33,7 +33,7 @@
                                                                    inManagedObjectContext:appDelegate.managedObjectContext];
     patient100.name = @"Patient Name A";
     patient100.surname = @"Patient Surname A";
-    patient100.age = 20;
+    patient100.age = 14;
     patient100.gender = MALE_GENDER;
     patient100.drugsUse = YES;
     patient100.migraines = YES;
@@ -43,7 +43,7 @@
                                                                   inManagedObjectContext:appDelegate.managedObjectContext];
     patient50.name = @"Patient Name A";
     patient50.surname = @"Patient Surname A";
-    patient50.age = 14;
+    patient50.age = 20;
     patient50.gender = MALE_GENDER;
     patient50.drugsUse = YES;
     patient50.migraines = NO;
