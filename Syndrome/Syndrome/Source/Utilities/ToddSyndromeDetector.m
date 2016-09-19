@@ -19,7 +19,7 @@
     result += self.patient.migraines ? 25.0 : 0.0;
     result += self.patient.drugsUse ? 25.0 : 0.0;
     result += self.patient.gender == MALE_GENDER ? 25.0 : 0.0;
-    result += self.patient.age > 15 ? 25.0 : 0.0;
+    result += self.patient.age <= 15 ? 25.0 : 0.0;
     
     return result;
 }
