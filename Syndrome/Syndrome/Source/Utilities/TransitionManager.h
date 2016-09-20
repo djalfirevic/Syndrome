@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define kTransitionAnimationDuration 0.75f
+
 @interface TransitionManager : NSObject <UIViewControllerAnimatedTransitioning>
 @property (nonatomic) CGRect frame;
 @property (nonatomic) UINavigationControllerOperation navigationControllerOperation;

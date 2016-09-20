@@ -26,7 +26,7 @@
     [NSException raise:@"Unknown Syndrome detector"
                 format:@"This is a generic class, please provide your own sublcass"];
     
-    return 0.0;
+    return kZeroValue;
 }
 
 @end

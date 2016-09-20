@@ -74,13 +74,13 @@
     
     [UIView animateWithDuration:kAnimationDuration animations:^{
         self.button2.center = self.menuButton.center;
-        self.button2.alpha = 0.0f;
+        self.button2.alpha = kZeroValue;
     }];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:kAnimationDuration animations:^{
             self.button1.center = self.menuButton.center;
-            self.button1.alpha = 0.0f;
+            self.button1.alpha = kZeroValue;
         }];
     });
 }
@@ -102,7 +102,7 @@
 }
 
 - (void)configureButton:(UIButton *)button {
-    button.alpha = 0.0f;
+    button.alpha = kZeroValue;
     button.center = self.menuButton.center;
 }
 

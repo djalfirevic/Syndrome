@@ -15,7 +15,7 @@
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
     TransitionManager *transitionManager = [[TransitionManager alloc] init];
-    transitionManager.frame = CGRectMake(300, 20, 44, 44);
+    transitionManager.frame = CGRectMake(300, 20, kNavigationBarHeight, kNavigationBarHeight);
     transitionManager.navigationControllerOperation = operation;
     
     return transitionManager;

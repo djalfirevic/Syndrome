@@ -19,10 +19,10 @@
 #pragma mark - Private API
 
 - (void)animateViewWith3dEffect:(UIView *)view {
-    CATransform3D rotation = CATransform3DMakeRotation((90.0f * M_PI)/180.0f, 0.0f, 0.5f, 0.5f);
+    CATransform3D rotation = CATransform3DMakeRotation((90.0f * M_PI)/180.0f, kZeroValue, 0.5f, 0.5f);
     view.alpha = 0.8f;
     view.layer.transform = rotation;
-    view.layer.anchorPoint = CGPointMake(0.0f, 0.5f);
+    view.layer.anchorPoint = CGPointMake(kZeroValue, 0.5f);
     
     [UIView animateWithDuration:0.5f
                      animations:^{

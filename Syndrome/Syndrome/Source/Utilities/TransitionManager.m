@@ -22,8 +22,8 @@
     
     // Get rects that represent the top and bottom halves of the screen
     CGSize viewSize = fromController.view.bounds.size;
-    CGRect topFrame = CGRectMake(0, 0, viewSize.width, viewSize.height/2);
-    CGRect bottomFrame = CGRectMake(0, viewSize.height/2, viewSize.width, viewSize.height/2);
+    CGRect topFrame = CGRectMake(kZeroValue, kZeroValue, viewSize.width, viewSize.height/2);
+    CGRect bottomFrame = CGRectMake(kZeroValue, viewSize.height/2, viewSize.width, viewSize.height/2);
     
     if (self.navigationControllerOperation == UINavigationControllerOperationPush) {
         // Create snapshots
@@ -101,7 +101,7 @@
 }
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.75f;
+    return kTransitionAnimationDuration;
 }
 
 #pragma mark - CABasicAnimation

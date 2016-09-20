@@ -31,7 +31,7 @@
 - (NSArray *)pickerValuesArray {
     if (!_pickerValuesArray) {
         NSMutableArray *array = [[NSMutableArray alloc] init];
-        for (int i = 10; i <= 80; i++) {
+        for (int i = kBeginningAge; i <= kEndingAge; i++) {
             [array addObject:[NSString stringWithFormat:@"%d", i]];
         }
         
@@ -70,7 +70,7 @@
 }
 
 - (void)pickerDone {
-    if (self.ageTextField.text.length == 0) {
+    if (self.ageTextField.text.length == kZeroValue) {
         self.ageTextField.text = [self.pickerValuesArray objectAtIndex:0];
     }
     
@@ -87,11 +87,11 @@
  @param values    Which values should be available in pickerView
  */
 - (void)configurePickerInputViewWithText:(NSString *)text forTextField:(UITextField *)textField withValues:(NSArray *)values {
-    UIView *inputView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, [UIScreen mainScreen].bounds.size.height-216.0f, [UIScreen mainScreen].bounds.size.width, 216.0f)];
+    UIView *inputView = [[UIView alloc] initWithFrame:CGRectMake(kZeroValue, [UIScreen mainScreen].bounds.size.height-kKeyboardHeight, [UIScreen mainScreen].bounds.size.width, kKeyboardHeight)];
     inputView.backgroundColor = [UIColor whiteColor];
     
     UIPickerView *pickerView = [[UIPickerView alloc] init];
-    pickerView.frame = CGRectMake(0.0f, 0.0f, [UIScreen mainScreen].bounds.size.width, pickerView.frame.size.height);
+    pickerView.frame = CGRectMake(kZeroValue, kZeroValue, [UIScreen mainScreen].bounds.size.width, pickerView.frame.size.height);
     pickerView.dataSource = self;
     pickerView.delegate = self;
     pickerView.backgroundColor = [UIColor clearColor];
@@ -101,7 +101,7 @@
     
     textField.inputView = inputView;
     
-    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f, 0.0f, [UIScreen mainScreen].bounds.size.width, 44.0f)];
+    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(kZeroValue, kZeroValue, [UIScreen mainScreen].bounds.size.width, kNavigationBarHeight)];
     toolbar.translucent = NO;
     toolbar.tintColor = [UIColor darkGrayColor];
     toolbar.barTintColor = [UIColor lightGrayColor];
@@ -131,9 +131,9 @@
 }
 
 - (void)toggleProbability:(BOOL)option {
-    [UIView animateWithDuration:0.3f animations:^{
-        self.titleLabel.alpha = option ? 1.0f : 0.0f;
-        self.probabilityLabel.alpha = option ? 1.0f: 0.0f;
+    [UIView animateWithDuration:kAnimationDuration animations:^{
+        self.titleLabel.alpha = option ? 1.0f : kZeroValue;
+        self.probabilityLabel.alpha = option ? 1.0f: kZeroValue;
     }];
 }
 
@@ -157,17 +157,17 @@
  @return YES/NO
  */
 - (BOOL)validationPassed {
-    if (self.nameTextField.text.length == 0) {
+    if (self.nameTextField.text.length == kZeroValue) {
         [self presentErrorWithTitle:@"Validation Error" andError:@"Please fill in your name"];
         return NO;
     }
     
-    if (self.surnameTextField.text.length == 0) {
+    if (self.surnameTextField.text.length == kZeroValue) {
         [self presentErrorWithTitle:@"Validation Error" andError:@"Please fill in your surname"];
         return NO;
     }
     
-    if (self.ageTextField.text.length == 0) {
+    if (self.ageTextField.text.length == kZeroValue) {
         [self presentErrorWithTitle:@"Validation Error" andError:@"Please fill in your age"];
         return NO;
     }
@@ -193,7 +193,7 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     if (textField == self.ageTextField) {
-        [self configurePickerInputViewWithText:self.ageTextField.text.length > 0 ? self.ageTextField.text : [self.pickerValuesArray firstObject]
+        [self configurePickerInputViewWithText:self.ageTextField.text.length > kZeroValue ? self.ageTextField.text : [self.pickerValuesArray firstObject]
                                   forTextField:self.ageTextField
                                     withValues:self.pickerValuesArray];
     }
@@ -212,7 +212,7 @@
 - (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component {
     NSString *string = [self.pickerValuesArray objectAtIndex:row];
     NSDictionary *attributes = @{
-                                 NSFontAttributeName : [UIFont fontWithName:@"AvenirNext-Regular" size:16.0],
+                                 NSFontAttributeName : [UIFont fontWithName:@"AvenirNext-Regular" size:kFontSize],
                                  NSForegroundColorAttributeName : [UIColor blackColor]
                                  };
     

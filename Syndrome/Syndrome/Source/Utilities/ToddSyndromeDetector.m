@@ -14,12 +14,12 @@
 #pragma mark - Public API
 
 - (double)probability {
-    double result = 0.0;
+    double result = kZeroValue;
     
-    result += self.patient.migraines ? 25.0 : 0.0;
-    result += self.patient.drugsUse ? 25.0 : 0.0;
-    result += self.patient.gender == MALE_GENDER ? 25.0 : 0.0;
-    result += self.patient.age <= 15 ? 25.0 : 0.0;
+    result += self.patient.migraines ? 25.0 : kZeroValue;
+    result += self.patient.drugsUse ? 25.0 : kZeroValue;
+    result += self.patient.gender == MALE_GENDER ? 25.0 : kZeroValue;
+    result += self.patient.age <= kAgeBoundaryForToddSyndrome ? 25.0 : kZeroValue;
     
     return result;
 }

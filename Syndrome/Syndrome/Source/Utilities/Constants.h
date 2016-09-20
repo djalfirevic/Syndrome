@@ -14,4 +14,13 @@ typedef NS_ENUM(NSInteger, Gender) {
     FEMALE_GENDER
 };
 
+#define kBeginningAge 1
+#define kAgeBoundaryForToddSyndrome 15
+#define kEndingAge 80
+#define kZeroValue 0
+#define kKeyboardHeight 216.0f
+#define kNavigationBarHeight 44.0f
+#define kAnimationDuration 0.3f
+#define kFontSize 16.0f
+
 #endif /* Constants_h */
