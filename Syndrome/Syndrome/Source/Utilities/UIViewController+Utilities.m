@@ -17,7 +17,7 @@
                                                                              message:error
                                                                       preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:NULL];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:OK_STRING style:UIAlertActionStyleCancel handler:NULL];
     
     [alertController addAction:action];
     

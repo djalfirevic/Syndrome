@@ -44,7 +44,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[WebViewController class]]) {
         WebViewController *toViewController = segue.destinationViewController;
-        toViewController.urlString = @"https://en.wikipedia.org/wiki/Alice_in_Wonderland_syndrome";
+        toViewController.urlString = WIKI_URL;
     }
 }
 
@@ -52,9 +52,9 @@
 
 - (void)menuViewOptionTapped:(MenuOption)option {
     if (option == HISTORY_MENU_OPTION) {
-        [self performSegueWithIdentifier:@"HistorySegue" sender:self];
+        [self performSegueWithIdentifier:HISTORY_SEGUE sender:self];
     } else if (option == PATIENT_MENU_OPTION) {
-        [self performSegueWithIdentifier:@"PatientSegue" sender:self];
+        [self performSegueWithIdentifier:PATIENT_SEGUE sender:self];
     }
 }
 

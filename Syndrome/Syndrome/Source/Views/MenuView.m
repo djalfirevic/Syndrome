@@ -8,8 +8,6 @@
 
 #import "MenuView.h"
 
-#define kAnimationDuration 0.3
-
 @interface MenuView()
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
 @property (weak, nonatomic) IBOutlet UIButton *button1;
